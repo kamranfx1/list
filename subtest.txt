@@ -27,3 +27,6 @@ vless://cd96c683-96d5-413d-9e28-ec9d5661dc03@iranserver.com:443/?type=ws&encrypt
 vless://cd96c683-96d5-413d-9e28-ec9d5661dc03@iranpress.com:443/?type=ws&encryption=none&host=cf.soft97.cf&path=%2Fvless%3Fed%3D2048&security=tls&sni=fakesni.soft97.cf&fp=randomized#edgetunnel%20%E2%98%81%EF%B8%8F%20All%20
 sn://wg?eNpjYmBgsLJKAwKrpGRzIyszo9QNn5gZGHYamhvpGZrpGegZ6RsbcRmZGZhZmZgbGFgZGhpYWaSYG1iZJFlaWCUZGBhZpVmkmlulmhua6xsaWax1dK9MMy4z9vDOLQrPdA3RNvUxNPVOd82JCkuNDPJzDNCvdHR28tIPNsgttl2blBvh76ztZuhW4errZplSmelt5GGqbxgcWlLlYeBVGpZvaphhVB6Qll6Zb9vIwMrA4OVnsIUR6OYp5YlFBY9mNL7f0f9o1sLMAjOFoBAfBV9vJ4XGRgDZjz8i
 sn://wg?eNpjYmBgKNcrTswsSKxMTEnM1itO-vyJmYFhp6G5kZ6hmZ6BnpG-sRGXkZmBmZWJuYGBlaGhgZVFirmBlUmSpYVVkoGBkVWaRaq5Vaq5obm-oZHFWkf3yjTjMmMP79yi8EzXEG1TH0NT73TXnKiw1MggP8cA_UpHZycv_WCD3GLbtUm5Ef7O2m6GbhWuvm6WKZWZ3kYepvqGwaElVR4GXqVh-aaGGUblAWnplfm2jQysDAxefgZbGIFu7g9PLCpQeDSj8f2O_kezFiqAfdDYCADCrz-Y
+sn://ssh?eNpjYGBgMNUztDDSM7bUMzLZIAbkm6cYmmbplhXkZSXmlWSW6CXnv2UECjsmJhoaGhkZb24E8WYVGL5dsOft9q1gcidYj0JaaXJ2Zl66gq-zp4JRYyMAxiUeyg
+ss://YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN@145.239.6.202:4444#LU%F0%9F%87%AC%F0%9F%87%A7%20All%20
+
