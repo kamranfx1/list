@@ -53,5 +53,7 @@ trojan://eu6YhvKdPJ@init1984-mtn.linuxmember.online:443/?type=grpc&serviceName=%
 vless://99cdac6d-43b9-47d9-b653-5ac55073f4d5@init1984-mtn.linuxmember.online:2087/?type=grpc&encryption=none&serviceName=%40INIT1984&security=tls&sni=inittes.parsiran.top#MTN%3AS2
 vless://b09664a6-85ab-4ad4-99e9-b3d933dc36d7@38.180.20.221:41971/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=ftp.debian.org&fp=chrome&security=reality&pbk=m_DSo7z7Vf51CNcqxmEXtZjZXcvMGvI17QgQjsYxlV4&sid=aa106690#MCI%2FMTN
 vless://fa994681-f88a-4c80-a0ab-fa2bafdb14d5@38.180.20.221:15172/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=zula.ir&fp=firefox&security=reality&pbk=VOWsK959_D6s_Gxwi8kC6AOL8VqMOFWzZGAxMAFau10&sid=fb5604#MCI%2FMTN%202
-sn://ssh?eNpjYGBgSC4w1EsuyMzPy8nMS9VLfux9k4EhsygxL7ngJSNQOq0oNTUtvwgo8q4RxO8rLs4wfLtgz9vtu8DkJgVfZ0-FxkYA4sod9g
-vless://9c058330-a7e7-4483-83fd-3314ab7f1413@104.27.5.173:2087/?type=ws&encryption=none&host=a.b.c.cpionline.us&path=%2F&security=tls&sni=a.b.c.cpionline.us&alpn=h2%2Chttp%2F1.1&fp=android#cpi%E2%98%81%EF%B8%8F
+sn://ssh?eNpjYGBgMDHVMzfXMzQ10DO03Ol9k4EhsygxL7ngJSNQLq0oNTUtvwgo8q4RxO8rLs4wfLtgz9vtu8DkJgVfZ0-FxkYADdYaqQ
+vless://9c058330-a7e7-4483-83fd-3314ab7f1413@nestle.ir:2087/?type=ws&encryption=none&host=a.b.c.cpionline.us&path=%2F&security=tls&sni=a.b.c.cpionline.us&alpn=h2%2Chttp%2F1.1&fp=android#cpi%E2%98%81%EF%B8%8F
+sn://wg?eNpjYmBgKNfLTs1KSswo1it5_YmZgWGnobmRnqGZnoGekb6xEZeRmYGZlYm5gYGVoaGBlUWKuYGVSZKlhVWSgYGRVZpFqrlVqrmhub6hkcVaR_fKNOMyYw_v3KLwTNcQbVMfQ1PvdNecqLDUyCA_xwD9SkdnJy_9YIPcYtu1SbkR_s7aboZuFa6-bpYplZneRh6m-obBoSVVHgZepWH5poYZRuUBaemV-baNDKwMDF5-BlsYge7tDH80o_H9jn6FoBAfhcZGAJT_OW0
+sn://ssh?eNpjYGBgMLS01DMyMdcz1jPa6X2TgSGzKDEvueAlI1AqrSg1NS2_CCjyrhHE7y0uzjB6u2DP2-0rweQqX2dPhcZGAOZPGj4
