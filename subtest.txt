@@ -60,3 +60,12 @@ vless://83fc15c1-1c8a-41da-f906-ad4993938495@38.180.20.221:27556/?type=tcp&encry
 vless://9aacb317-0549-40ea-8282-9390d1ea9d41@38.180.20.221:53718/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=zula.ir&fp=firefox&security=reality&pbk=LH-eTcNGIDqfnalotlpOHx7oUkM68YZzF-s-eItyNGQ&sid=d4dcecf7#MCI%20
 trojan://P3062yvTKL@init1984-mtn.linuxmember.online:443/?type=grpc&serviceName=%40INIT1984&security=tls&sni=init1984.parsiran.top#%20MTN
 vless://c82d1d87-5485-41f6-a1bb-0b84c13a5fa2@api.babaconfig.online:2087/?type=grpc&encryption=none&serviceName=%40INIT1984&security=tls&sni=inittes.parsiran.top#%20MTN%3AS2
+https://kamranfx:A%40a112233@[2a03:f80:56:a95d::1]:993/?sni=fake.secureconnect.me#TGfix%F0%9F%87%A8%F0%9F%87%B1%2037.235.52.64%20ip6
+https://kamranfx:A%40a112233@37.235.52.64:993/?sni=fake.secureconnect.me#TGfix%F0%9F%87%A8%F0%9F%87%B1%2037.235.52.64
+https://kamranfx:A%40a112233@185.125.168.248:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%B3%F0%9F%87%B4185.125.168.248
+https://kamranfx:A%40a112233@178.175.131.114:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%B2%F0%9F%87%A9178.175.131.114
+https://kamranfx:A%40a112233@185.189.115.108:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A8%F0%9F%87%BF185.189.115.108
+https://kamranfx:A%40a112233@146.70.137.114:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A8%F0%9F%87%A6146.70.137.114
+https://kamranfx:A%40a112233@38.54.2.245:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A7%F0%9F%87%AD38.54.2.245
+https://kamranfx:A%40a112233@93.177.75.10:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A8%F0%9F%87%B593.177.75.10
+https://kamranfx:A%40a112233@206.217.216.11:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%AC%F0%9F%87%A7206.217.216.11
