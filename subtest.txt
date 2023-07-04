@@ -17,7 +17,7 @@ vless://c754e4c1-0724-4a06-9839-ad6a1850977a@fr.vegansho.cf:19289/?type=tcp&encr
 vless://6f630eac-50a8-4b6a-9d8d-c60e7c101875@fr.vegansho.cf:42125/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=ftp.debian.org&fp=chrome&security=reality&pbk=hspwNHDkDmVPdR62J653HoRg5D2BKZQpgrzrUp4BIC0&sid=6c77#Debian-%F0%9F%87%A8%F0%9F%87%B5
 vmess://eyJhZGQiOiIyMDMuMjMuMTA2LjE0NSIsImFpZCI6IjAiLCJhbHBuIjoiaHR0cC8xLjEiLCJmcCI6ImNocm9tZSIsImhvc3QiOiJyb2NrLmJsYW5rdS5tZSIsImlkIjoiODI0YzU4YjEtNjViYS00NjgwLWE2MDktNjYzYTAwMGRiYjkyIiwibmV0Ijoid3MiLCJwYXRoIjoiL3dzczEzODg5P2VkXHUwMDNkMjA0OCIsInBvcnQiOiI0NDMiLCJwcyI6InYyZml4aXDwn4ep8J+HqiBSVEwgSVJDICIsInNjeSI6ImF1dG8iLCJzbmkiOiJyb2NrcC5ibGFua3UubWUiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ==
 vless://25e4ddab-6a6b-4ee1-ee63-5df3ff034724@5.161.155.129:8080/?encryption=none&host=speedtest.net&type=tcp&headerType=http#pe%F0%9F%87%BA%F0%9F%87%B2%20
-vless://399b22ba-f917-4870-d007-b8ea772e30c0@cf.vegansho.cf:22315/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=download-installer.cdn.mozilla.net&fp=chrome&security=reality&pbk=6VWNO_mS35ogOpEp2Gypcv2dcI6az68BH9u87dGE2zI&sid=196a#firefix-
+vless://9915e99e-de9e-45cf-de21-f33b7942aee3@cf.vegansho.cf:38117/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=gmail.com&fp=firefox&security=reality&pbk=ScNWuhgBqMr2EbUTuWuuI3qgA93o8QLJfWEjTs_3_3A&sid=1a#gmail-
 vless://7a6380ea-8328-4ad1-8f18-b5834527e5e5@cf.vegansho.cf:19491/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=cdn-download1.zula.ir&fp=chrome&security=reality&pbk=uMtGi-vtP1aXBXI1OXVYeo6oA-XdzP4Lr4VLMSKpTzM&sid=969a93#cdnzula-
 vless://9431aaff-7410-4cf2-f168-2a5318c07087@cf.vegansho.cf:24017/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=mega.io&fp=chrome&security=reality&pbk=pfrJUPWXyd6QKQdFXfmEmj5vkQXMvsnEHvjC6uAszRI&sid=e68b616807#mega-
 sn://wg?eNpFz7FOwkAYAOBT4-JTsJu0_393_eH-hEEbSy0SDS3g2utRQVNLDA3QrW9i3BkceTFn3XyAb_jOhRBfkoBY9wHYAbM1oJjI5qxJW0ZQ-feFECfsSw_JA0_6Sl79G0TggdOGS4UBU6kVL4vc8FIWzkc5OKajvS1al9arVCetGb0nr3K8qLI4CefbsHkrs6aa-vr2poLh0VbPj-F1hNH-bhIZd1iPZRz4mM62bQxJM68DXMndU_lyqIeduBSC6P7n7G-xyz82vfWGetPs4bPrfgH8Azzn
@@ -40,7 +40,7 @@ vless://e7469922-92a3-4f73-b05b-899b0d5980c5@cf.vegansho.cf:34742/?type=tcp&encr
 vmess://eyJhZGQiOiJhcmlhcGF5LmlvIiwiYWlkIjoiMCIsImFscG4iOiJodHRwLzEuMSIsImZwIjoiaW9zIiwiaG9zdCI6IkFtc3RlcmRhbS5rb3RpY2suc2l0ZSIsImlkIjoiNEM3M0FGNzgtNTRENC00NEUyLUEwNjAtRTExRDNFNDYxODc2IiwibmV0Ijoid3MiLCJwYXRoIjoiL3NwZWVkdGVzdD9lZFx1MDAzZDIwNDgiLCJwb3J0IjoiNDQzIiwicHMiOiJHMi4xMEct8J+Hs/Cfh7EgIiwic2N5IjoiYXV0byIsInNuaSI6IkFtc3RlcmRhbS5rb3RpY2suc2l0ZSIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
 vless://80348476-ce98-458c-a26b-f35eac48bef2@nestle.ir:443/?type=ws&encryption=none&host=kt.soft97.cf&path=%2F%3Fed%3D2048&security=tls&sni=fakekt.soft97.cf&fp=chrome#kt%20%E2%98%81%EF%B8%8F%F0%9F%87%A9%F0%9F%87%AA
 vless://15e575ad-082b-473f-ec04-45ccf979a665@vpnfor-2ray.tk:18019/?encryption=none&host=fast.com&type=tcp&headerType=http#Abz%F0%9F%87%AC%F0%9F%87%A7%20RTL%20
-vless://69fb5c30-bf70-4ecc-8f80-66476f19c42c@abzvpn.apzagros.xyz:2086/?type=tcp&encryption=none&security=tls&sni=aabzvpn.apzagros.xyz&allowInsecure=1&fp=chrome#Abz%F0%9F%87%AC%F0%9F%87%A7%20MCI%20
+vless://399b22ba-f917-4870-d007-b8ea772e30c0@cf.vegansho.cf:22315/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=download-installer.cdn.mozilla.net&fp=chrome&security=reality&pbk=6VWNO_mS35ogOpEp2Gypcv2dcI6az68BH9u87dGE2zI&sid=196a#firefix-
 vless://823189fc-16ed-43ba-9dd6-221c707f0304@cf.vegansho.cf:28549/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=sto.royalv.shop&fp=chrome&security=reality&pbk=aKw35CNVm5fT6I-5i6_1JwaVRwfZh2boj0rOE6zeGAY&sid=5c75c90f6a#sto.royalv.shop
 vless://04305816-5f14-4711-906a-8bed73818c0c@fr.vegansho.cf:35166/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=persiantools.com&fp=firefox&security=reality&pbk=cSg_HfULmun4wgci91AolKuGWhFebAmsrbxYjkzH_ik&sid=b9eb#persiantools%20%F0%9F%87%A8%F0%9F%87%B5
 vless://dc412c54-739f-49fe-da8e-72861f504d7b@cf.vegansho.cf:57829/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=persiantools.com&fp=firefox&security=reality&pbk=S2isOvBvFwgyv6Rm6NfFopq7_h1G7RxT4eujLkVcuVk&sid=34#persiantools%20%F0%9F%87%B8%F0%9F%87%AA
@@ -49,12 +49,12 @@ sn://ssh?eNpjYGBgSC4wNNFLLsjMz8vJzEvVS37sfZOBIbMoMS-54CUjUD6tKDU1Lb8IKPKuEcTvKy7
 vless://9c058330-a7e7-4483-83fd-3314ab7f1413@45.80.111.156:443/?type=ws&encryption=none&host=a.b.c.cpionline.us&path=%2F&security=tls&sni=a.b.c.cpionline.us&alpn=h2%2Chttp%2F1.1&fp=android#cpi%E2%98%81%EF%B8%8F
 sn://wg?eNpjYmBgKNfLTs1KSswo1it5_YmZgWGnobmRnqGZnoGekb6xEZeRmYGZlYm5gYGVoaGBlUWKuYGVSZKlhVWSgYGRVZpFqrlVqrmhub6hkcVaR_fKNOMyYw_v3KLwTNcQbVMfQ1PvdNecqLDUyCA_xwD9SkdnJy_9YIPcYtu1SbkR_s7aboZuFa6-bpYplZneRh6m-obBoSVVHgZepWH5poYZRuUBaemV-baNDKwMDF5-BlsYge7tDH80o_H9jn6FoBAfhcZGAJT_OW0
 sn://ssh?eNpjYGBgMLS01DMyMdcz1jPa6X2TgSGzKDEvueAlI1AqrSg1NS2_CCjyrhHE7y0uzjB6u2DP2-0rweQqX2dPhcZGAOZPGj4
-vless://9915e99e-de9e-45cf-de21-f33b7942aee3@cf.vegansho.cf:38117/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=gmail.com&fp=firefox&security=reality&pbk=ScNWuhgBqMr2EbUTuWuuI3qgA93o8QLJfWEjTs_3_3A&sid=1a#gmail-
+vless://69fb5c30-bf70-4ecc-8f80-66476f19c42c@abzvpn.apzagros.xyz:2086/?type=tcp&encryption=none&security=tls&sni=aabzvpn.apzagros.xyz&allowInsecure=1&fp=chrome#Abz%F0%9F%87%AC%F0%9F%87%A7%20MCI%20
 vmess://eyJhZGQiOiJjZG4uYW55Y2FzdC5ldS5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IndlZWstcGVybWFsaW5rLXNhbXN1bmctb21pc3Npb25zLnRyeWNsb3VkZmxhcmUuY29tIiwiaWQiOiJmZmZmZmZmZi1mZmZmLWZmZmYtZmZmZi1mZmZmZmZmZmZmZmYiLCJuZXQiOiJ3cyIsInBhdGgiOiIiLCJwb3J0IjoiODAiLCJwcyI6InJlbmRlciDwn4e68J+HsiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
 vmess://eyJhZGQiOiJjZG4uYW55Y2FzdC5ldS5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImNhcmRpYWMtYXBwbGljYW50cy1tbi1yb2NoZXN0ZXIudHJ5Y2xvdWRmbGFyZS5jb20iLCJpZCI6ImZmZmZmZmZmLWZmZmYtZmZmZi1mZmZmLWZmZmZmZmZmZmZmZiIsIm5ldCI6IndzIiwicGF0aCI6IiIsInBvcnQiOiI4MCIsInBzIjoicmVuZGVy8J+HqfCfh6oiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
 vless://561679b9-3878-4ac7-9cbd-43980af74ad9@5.230.54.21:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.datadoghq.com&fp=chrome&security=reality&pbk=L7mjxLFDZeWj2MyQfyhu8q3UtD3LuW0bgSvIaiQ0CQM&sid=62ab3a333640336e#TWOF%F0%9F%87%A9%F0%9F%87%AA
-https://kamranfx:A%40a112233@82.102.23.178:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A7%F0%9F%87%AC%2082.102.23.178
-https://kamranfx:A%40a112233@91.132.197.192:993/?sni=fake.secureconnect.me#TGFIX%F0%9F%87%AB%F0%9F%87%AE%2091.132.197.192
+https://kamranfx:A%40a112233@82.102.23.178:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A7%F0%9F%87%AC%2082.102.23.178%20MCI%20
+https://kamranfx:A%40a112233@91.132.197.192:993/?sni=fake.secureconnect.me#TGFIX%F0%9F%87%AB%F0%9F%87%AE%2091.132.197.192%20MCI%20
 https://kamranfx:A%40a112233@37.120.198.162:23/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%AC%F0%9F%87%A7%2037.120.198.162
 vless://83fc15c1-1c8a-41da-f906-ad4993938495@38.180.20.221:27556/?type=tcp&encryption=none&sni=www.speedtest.net&fp=safari&security=reality&pbk=vwoE-RfzdGbZTYRg0d5pcCeniyWtT09jxyhorqynpkQ&sid=19e06c#MCI%20
 vless://9aacb317-0549-40ea-8282-9390d1ea9d41@38.180.20.221:53718/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=zula.ir&fp=firefox&security=reality&pbk=LH-eTcNGIDqfnalotlpOHx7oUkM68YZzF-s-eItyNGQ&sid=d4dcecf7#MCI%20
@@ -63,9 +63,11 @@ vless://c82d1d87-5485-41f6-a1bb-0b84c13a5fa2@api.babaconfig.online:2087/?type=gr
 https://kamranfx:A%40a112233@[2a03:f80:56:a95d::1]:993/?sni=fake.secureconnect.me#TGfix%F0%9F%87%A8%F0%9F%87%B1%2037.235.52.64%20ip6
 https://kamranfx:A%40a112233@37.235.52.64:993/?sni=fake.secureconnect.me#TGfix%F0%9F%87%A8%F0%9F%87%B1%2037.235.52.64
 https://kamranfx:A%40a112233@185.125.168.248:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%B3%F0%9F%87%B4185.125.168.248
-https://kamranfx:A%40a112233@178.175.131.114:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%B2%F0%9F%87%A9178.175.131.114
+https://kamranfx:A%40a112233@178.175.131.114:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%B2%F0%9F%87%A9178.175.131.114%20MCI%20
 https://kamranfx:A%40a112233@185.189.115.108:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A8%F0%9F%87%BF185.189.115.108
 https://kamranfx:A%40a112233@146.70.137.114:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A8%F0%9F%87%A6146.70.137.114
-https://kamranfx:A%40a112233@38.54.2.245:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A7%F0%9F%87%AD38.54.2.245
+https://kamranfx:A%40a112233@38.54.2.245:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A7%F0%9F%87%AD38.54.2.245%20MCI%20
 https://kamranfx:A%40a112233@93.177.75.10:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%A8%F0%9F%87%B593.177.75.10
 https://kamranfx:A%40a112233@206.217.216.11:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%AC%F0%9F%87%A7206.217.216.11
+https://kamranfx:A%40a112233@188.213.34.50:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%B9%F0%9F%87%B7%20188.213.34.50%20MCI%20
+https://kamranfx:A%40a112233@67.213.221.3:993/?sni=fake.secureconnect.me#TGFIX%20%F0%9F%87%BA%F0%9F%87%B2NY%2067.213.221.3%20MCI%20
