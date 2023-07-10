@@ -2,4 +2,6 @@ sn://wg?eNpjYmBgKNfLTs1KSswo1it5_YmZgWGnobmRnqGZnoGekb6xEZeRmYGZlYm5gYGVoaGBlUWK
 sn://ssh?eNpjYGBgSC4w0UsuyMzPy8nMS9VLfux9k4EhsygxL7ngJSNQOq0oNTUtvwgo8q4RxO8oLs54u2DP2-0rweSqxkYAPF8ckA
 sn://wg?eNpFz7FOwkAYAOBT4-JTsJu0_393_eH-hEEbSy0SDS3g2utRQVNLDA3QrW9i3BkceTFn3XyAb_jOhRBfkoBY9wHYAbM1oJjI5qxJW0ZQ-feFECfsSw_JA0_6Sl79G0TggdOGS4UBU6kVL4vc8FIWzkc5OKajvS1al9arVCetGb0nr3K8qLI4CefbsHkrs6aa-vr2poLh0VbPj-F1hNH-bhIZd1iPZRz4mM62bQxJM68DXMndU_lyqIeduBSC6P7n7G-xyz82vfWGetPs4bPrfgH8Azzn
 vless://04305816-5f14-4711-906a-8bed73818c0c@fr.vegansho.cf:35166/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=persiantools.com&fp=firefox&security=reality&pbk=cSg_HfULmun4wgci91AolKuGWhFebAmsrbxYjkzH_ik&sid=b9eb#persiantools%20%F0%9F%87%A8%F0%9F%87%B5
-sn://ssh?eNpjYGBgSExK1ksuyMzPy8nMS9Ur_azOwcCQWZSYl1zwkhEonVaUmpqWXwQUedcI4hcXZ2xsbAQA-bAS2A
+sn://ssh?eNpjYGBgSC4w10suyMzPy8nMS9VLfux9k4EhsygxL7ngJSNQOq0oNTUtvwgo8q4RxO8oLs54u2DP2-0rweSqxkYAPRwckw
+vless://8068c80d-2fa0-48c0-a278-9ce628fcaaca@45.63.119.14:55627/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.speedtest.net&alpn=h2%2Chttp%2F1.1&fp=chrome&security=reality&pbk=5iPJB_a9ngz_gQaxJpL-dXt4lVlSsrZBy7AW2tEl6Fs&sid=053090e5f99ef8ef#CPR%F0%9F%87%A9%F0%9F%87%AA45.63.119.14
+vless://be05b8eb-87ec-49c1-8322-4ef658d9e858@45.77.54.251:2083/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.speedtest.net&alpn=h2%2Chttp%2F1.1&fp=chrome&security=reality&pbk=ytnKmbNfp5W0Dt-hdL5MwczatthmI1wiaE2u62AqiRA&sid=5e94674f72f8a5bc#CPR2%F0%9F%87%A9%F0%9F%87%AA
