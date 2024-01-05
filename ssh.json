@@ -1,0 +1,286 @@
+{
+  "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
+    "independent_cache": true,
+    "rules": [
+      {
+        "domain": [
+          "ssh.cpionline.us"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "disable_cache": true,
+        "geosite": [
+          "category-ads-all"
+        ],
+        "server": "dns-block"
+      },
+      {
+        "disable_cache": true,
+        "domain_suffix": [
+          "appcenter.ms",
+          "app-measurement.com",
+          "firebase.io",
+          "crashlytics.com",
+          "google-analytics.com"
+        ],
+        "server": "dns-block"
+      },
+      {
+        "domain_suffix": [
+          "ir"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "geosite": [
+          "ir"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain_regex": [
+          ".+\\.ir$"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain": [
+          "www.jajiga.com",
+          "www.digikala.com",
+          "www.rapidpars.com",
+          "blacktiger.dl1.rapidpars.com"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "server": "dns-direct",
+        "user_id": [
+          10196,
+          10181,
+          10087,
+          10185,
+          10202,
+          10191
+        ]
+      },
+      {
+        "disable_cache": true,
+        "inbound": [
+          "tun-in"
+        ],
+        "server": "dns-fake"
+      }
+    ],
+    "servers": [
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "address_resolver": "dns-direct",
+        "strategy": "prefer_ipv6",
+        "tag": "dns-remote"
+      },
+      {
+        "address": "8.8.8.8",
+        "address_resolver": "dns-local",
+        "detour": "direct",
+        "strategy": "prefer_ipv6",
+        "tag": "dns-direct"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "dns-local"
+      },
+      {
+        "address": "rcode://success",
+        "tag": "dns-block"
+      },
+      {
+        "address": "fakeip",
+        "strategy": "ipv4_only",
+        "tag": "dns-fake"
+      }
+    ]
+  },
+  "experimental": {
+    "clash_api": {
+      "cache_file": "../cache/clash.db",
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "../files/yacd"
+    }
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "listen_port": 6450,
+      "override_address": "8.8.8.8",
+      "override_port": 53,
+      "tag": "dns-in",
+      "type": "direct"
+    },
+    {
+      "domain_strategy": "prefer_ipv6",
+      "endpoint_independent_nat": true,
+      "inet4_address": [
+        "172.19.0.1/28"
+      ],
+      "inet6_address": [
+        "fdfe:dcba:9876::1/126"
+      ],
+      "mtu": 1480,
+      "sniff": true,
+      "sniff_override_destination": false,
+      "stack": "system",
+      "tag": "tun-in",
+      "type": "tun"
+    },
+    {
+      "domain_strategy": "prefer_ipv6",
+      "listen": "127.0.0.1",
+      "listen_port": 2080,
+      "sniff": true,
+      "sniff_override_destination": false,
+      "tag": "mixed-in",
+      "type": "mixed"
+    }
+  ],
+  "log": {
+    "level": "panic"
+  },
+  "outbounds": [
+    {
+      "password": "freeforiran",
+      "server": "ssh.cpionline.us",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "bypass",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rules": [
+      {
+        "outbound": "dns-out",
+        "port": [
+          53
+        ]
+      },
+      {
+        "inbound": [
+          "dns-in"
+        ],
+        "outbound": "dns-out"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "block",
+        "port": [
+          443
+        ],
+        "port_range": []
+      },
+      {
+        "geosite": [
+          "category-ads-all"
+        ],
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          "appcenter.ms",
+          "app-measurement.com",
+          "firebase.io",
+          "crashlytics.com",
+          "google-analytics.com"
+        ],
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          "ir"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "geoip": [
+          "ir"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "geosite": [
+          "ir"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "geoip": [
+          "ir"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "domain_regex": [
+          ".+\\.ir$"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "domain": [
+          "www.jajiga.com",
+          "www.digikala.com",
+          "www.rapidpars.com",
+          "blacktiger.dl1.rapidpars.com"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "outbound": "bypass",
+        "user_id": [
+          10196,
+          10181,
+          10087,
+          10185,
+          10202,
+          10191
+        ]
+      },
+      {
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "outbound": "block",
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ]
+      }
+    ]
+  }
+}
