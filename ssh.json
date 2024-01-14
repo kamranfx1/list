@@ -169,7 +169,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy"
+      "tag": "proxy2"
     },
 {
       "password": "freeforiran",
@@ -178,7 +178,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy"
+      "tag": "proxy3"
     },
     {
       "tag": "direct",
