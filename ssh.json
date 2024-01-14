@@ -180,6 +180,78 @@
       "domain_strategy": "",
       "tag": "proxy3"
     },
+{
+      "password": "freeforiran",
+      "server": "4.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy4"
+    },
+{
+      "password": "freeforiran",
+      "server": "5.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy5"
+    },
+{
+      "password": "freeforiran",
+      "server": "6.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy6"
+    },
+{
+      "password": "freeforiran",
+      "server": "7.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy7"
+    },
+{
+      "password": "freeforiran",
+      "server": "8.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy8"
+    },
+{
+      "password": "freeforiran",
+      "server": "9.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy9"
+    },
+{
+      "password": "freeforiran",
+      "server": "10.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy10"
+    },
+{
+      "password": "freeforiran",
+      "server": "1.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy1"
+    },
     {
       "tag": "direct",
       "type": "direct"
