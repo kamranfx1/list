@@ -155,7 +155,7 @@
   "outbounds": [
     {
       "password": "freeforiran",
-      "server": "ssh.cpionline.us",
+      "server": "1.iraniancpi.uk",
       "server_port": 55627,
       "user": "irancpi",
       "type": "ssh",
