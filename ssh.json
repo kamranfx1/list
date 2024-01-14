@@ -158,7 +158,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy"
+      "tag": "proxy🇩🇪"
     },
 {
       "password": "freeforiran",
@@ -167,7 +167,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy2"
+      "tag": "proxy🇩🇪2"
     },
 {
       "password": "freeforiran",
@@ -176,7 +176,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy3"
+      "tag": "proxy🇩🇪3"
     },
 {
       "password": "freeforiran",
@@ -185,7 +185,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy4"
+      "tag": "proxy🇩🇪4"
     },
 {
       "password": "freeforiran",
@@ -194,7 +194,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy5"
+      "tag": "proxy🇩🇪5"
     },
 {
       "password": "freeforiran",
@@ -203,7 +203,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy6"
+      "tag": "proxy🇩🇪6"
     },
 {
       "password": "freeforiran",
@@ -212,7 +212,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy7"
+      "tag": "proxy🇩🇪7"
     },
 {
       "password": "freeforiran",
@@ -221,7 +221,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy8"
+      "tag": "proxy🇩🇪8"
     },
 {
       "password": "freeforiran",
@@ -230,7 +230,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy9"
+      "tag": "proxy🇩🇪9"
     },
 {
       "password": "freeforiran",
@@ -239,7 +239,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy10"
+      "tag": "proxy🇩🇪10"
     },
 {
       "password": "freeforiran",
@@ -248,7 +248,7 @@
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy1"
+      "tag": "proxy🇩🇪1"
     },
     {
       "tag": "direct",
@@ -341,9 +341,7 @@
       {
         "domain": [
           "www.jajiga.com",
-          "www.digikala.com",
-          "www.rapidpars.com",
-          "blacktiger.dl1.rapidpars.com"
+          "www.digikala.com"
         ],
         "outbound": "bypass"
       },
