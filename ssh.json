@@ -162,6 +162,24 @@
       "domain_strategy": "",
       "tag": "proxy"
     },
+{
+      "password": "freeforiran",
+      "server": "2.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy"
+    },
+{
+      "password": "freeforiran",
+      "server": "3.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy"
+    },
     {
       "tag": "direct",
       "type": "direct"
