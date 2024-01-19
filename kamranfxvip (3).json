@@ -1,0 +1,358 @@
+{
+    "dns": {
+        "independent_cache": true,
+        "rules": [
+            {
+                "domain": [
+                    "vipmcihyster1.dooricheh.com",
+                    "vipmcihyster2.dooricheh.com",
+                    "vipmcihyster3.dooricheh.com",
+                    "vipmcihyster4.dooricheh.com",
+                    "vipmcihyster5.dooricheh.com",
+                    "belghyster1.dooricheh.com",
+                    "belghyster2.dooricheh.com",
+                    "vipmcihystertunir.dooricheh.com",
+                    "belgtunir.dooricheh.com"
+                ],
+                "server": "dns-direct"
+            }
+        ],
+        "servers": [
+            {
+                "address": "tcp://1.1.1.1",
+                "address_resolver": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "tag": "dns-remote"
+            },
+            {
+                "address": "local",
+                "address_resolver": "dns-local",
+                "detour": "direct",
+                "strategy": "prefer_ipv4",
+                "tag": "dns-direct"
+            },
+            {
+                "address": "local",
+                "detour": "direct",
+                "tag": "dns-local"
+            },
+            {
+                "address": "rcode://success",
+                "tag": "dns-block"
+            }
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "listen_port": 6450,
+            "override_address": "8.8.8.8",
+            "override_port": 53,
+            "tag": "dns-in",
+            "type": "direct"
+        },
+        {
+            "type": "tun",
+            "mtu": 9000,
+            "inet4_address": "172.19.0.1/30",
+            "inet6_address": "fdfe:dcba:9876::1/126",
+            "auto_route": true,
+            "strict_route": true,
+            "endpoint_independent_nat": false,
+            "stack": "system",
+            "platform": {
+                "http_proxy": {
+                    "enabled": true,
+                    "server": "127.0.0.1",
+                    "server_port": 2080
+                }
+            }
+        },
+        {
+            "domain_strategy": "prefer_ipv4",
+            "listen": "127.0.0.1",
+            "listen_port": 2080,
+            "sniff": true,
+            "sniff_override_destination": true,
+            "tag": "mixed-in",
+            "type": "mixed"
+        }
+    ],
+    "log": {
+        "level": "panic"
+    },
+    "outbounds": [
+        {
+            "type": "selector",
+            "tag": "DOORICHEH \ud83d\udcc6 29",
+            "outbounds": [
+                "Turkey1 \ud83c\uddf9\ud83c\uddf7",
+                "Turkey2 \ud83c\uddf9\ud83c\uddf7",
+                "Turkey3 \ud83c\uddf9\ud83c\uddf7",
+                "Turkey4 \ud83c\uddf9\ud83c\uddf7",
+                "Turkey5 \ud83c\uddf9\ud83c\uddf7",
+                "Belgium1 \ud83c\udde7\ud83c\uddea",
+                "Belgium2 \ud83c\udde7\ud83c\uddea",
+                "TUNNEL \ud83c\uddee\ud83c\uddf7>\ud83c\uddf9\ud83c\uddf7",
+                "TUNNEL \ud83c\uddee\ud83c\uddf7>\ud83c\udde7\ud83c\uddea"
+            ]
+        },
+        {
+            "down_mbps": 0,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "kamranfxvip:kamranfxvip72823",
+            "server": "vipmcihyster1.dooricheh.com",
+            "server_port": 443,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUGoioUtwkecA0ZCDf4zYfi5s40WswDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyODExMTUwMFoXDTM4MTIyNDExMTUwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnCJW3wBjOlFA6GZ6UZzMILmba5vKgKC1GJb\nFLPoMKZSGCj7krko8dLCAIJw6+bQw5mMf9MWo0OPIQJYQ663H139tM1Xn9BgzDpo\nTFdzmpAPV/p2nNAvC17mJnB/s+zJpfAMT8daDOkvEGMPx5MROBVLuGMz3xz9nQb8\n62X9VpztKqCEaMQ1PtKAt0ehJiyvU0V+X5RCkGDvYmYPWl32QhJCIzpmyaQM8D0Q\naMbxTADLvY+bzlvuNvJFbwkJ9NgemfyPmmuulLig8s//ZQshUHilpUvmXgiu6Dx1\nKh7XN8wZe61jmoG4OGT5hEwGPajOfr0cTrSOUHfQFzzUsxgzjQIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQfhW5K9SLOspEGe/Z3pgczuUcIEDAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQChAF8SZ722D2Za+9z7ti7JdrY4zLQo\nuprmJsMXSqNx09+OBeJnUv4fYYUaMWE6uNZHrzDsD2iqwZjxqcPBss1+878C/IY2\n0e6NEPefNO6fM0tWl+XM4OmrM1NB6EbX1OO2btGfbGgUaeWbrAybDVl5t0xmA/WH\ncOTEX/3rGppXPYm/JwwYdjIRjv5v8boJX4ulbwsnLq+awSKYNTv5epR9IY3N9uA8\n3dX5nG68ewOaY4cBWDyzZufGe3Ck8fvTzsvWBBLZiZc4EUgK+EQJr2XzADVWfUov\n3cLQp9VZTlOsy+oVSX6BcW0KlIqwmKrdO/xXS9Nxn6NTMfHDjD9YYcAK\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vipmcihysterh3.dooricheh.com"
+            },
+            "up_mbps": 0,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "Turkey1 \ud83c\uddf9\ud83c\uddf7"
+        },
+        {
+            "down_mbps": 80,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "kamranfxvip:kamranfxvip72823",
+            "server": "vipmcihyster2.dooricheh.com",
+            "server_port": 443,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUGoioUtwkecA0ZCDf4zYfi5s40WswDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyODExMTUwMFoXDTM4MTIyNDExMTUwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnCJW3wBjOlFA6GZ6UZzMILmba5vKgKC1GJb\nFLPoMKZSGCj7krko8dLCAIJw6+bQw5mMf9MWo0OPIQJYQ663H139tM1Xn9BgzDpo\nTFdzmpAPV/p2nNAvC17mJnB/s+zJpfAMT8daDOkvEGMPx5MROBVLuGMz3xz9nQb8\n62X9VpztKqCEaMQ1PtKAt0ehJiyvU0V+X5RCkGDvYmYPWl32QhJCIzpmyaQM8D0Q\naMbxTADLvY+bzlvuNvJFbwkJ9NgemfyPmmuulLig8s//ZQshUHilpUvmXgiu6Dx1\nKh7XN8wZe61jmoG4OGT5hEwGPajOfr0cTrSOUHfQFzzUsxgzjQIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQfhW5K9SLOspEGe/Z3pgczuUcIEDAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQChAF8SZ722D2Za+9z7ti7JdrY4zLQo\nuprmJsMXSqNx09+OBeJnUv4fYYUaMWE6uNZHrzDsD2iqwZjxqcPBss1+878C/IY2\n0e6NEPefNO6fM0tWl+XM4OmrM1NB6EbX1OO2btGfbGgUaeWbrAybDVl5t0xmA/WH\ncOTEX/3rGppXPYm/JwwYdjIRjv5v8boJX4ulbwsnLq+awSKYNTv5epR9IY3N9uA8\n3dX5nG68ewOaY4cBWDyzZufGe3Ck8fvTzsvWBBLZiZc4EUgK+EQJr2XzADVWfUov\n3cLQp9VZTlOsy+oVSX6BcW0KlIqwmKrdO/xXS9Nxn6NTMfHDjD9YYcAK\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vipmcihysterh3.dooricheh.com"
+            },
+            "up_mbps": 40,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "Turkey2 \ud83c\uddf9\ud83c\uddf7"
+        },
+        {
+            "down_mbps": 60,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "kamranfxvip:kamranfxvip72823",
+            "server": "vipmcihyster3.dooricheh.com",
+            "server_port": 443,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUGoioUtwkecA0ZCDf4zYfi5s40WswDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyODExMTUwMFoXDTM4MTIyNDExMTUwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnCJW3wBjOlFA6GZ6UZzMILmba5vKgKC1GJb\nFLPoMKZSGCj7krko8dLCAIJw6+bQw5mMf9MWo0OPIQJYQ663H139tM1Xn9BgzDpo\nTFdzmpAPV/p2nNAvC17mJnB/s+zJpfAMT8daDOkvEGMPx5MROBVLuGMz3xz9nQb8\n62X9VpztKqCEaMQ1PtKAt0ehJiyvU0V+X5RCkGDvYmYPWl32QhJCIzpmyaQM8D0Q\naMbxTADLvY+bzlvuNvJFbwkJ9NgemfyPmmuulLig8s//ZQshUHilpUvmXgiu6Dx1\nKh7XN8wZe61jmoG4OGT5hEwGPajOfr0cTrSOUHfQFzzUsxgzjQIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQfhW5K9SLOspEGe/Z3pgczuUcIEDAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQChAF8SZ722D2Za+9z7ti7JdrY4zLQo\nuprmJsMXSqNx09+OBeJnUv4fYYUaMWE6uNZHrzDsD2iqwZjxqcPBss1+878C/IY2\n0e6NEPefNO6fM0tWl+XM4OmrM1NB6EbX1OO2btGfbGgUaeWbrAybDVl5t0xmA/WH\ncOTEX/3rGppXPYm/JwwYdjIRjv5v8boJX4ulbwsnLq+awSKYNTv5epR9IY3N9uA8\n3dX5nG68ewOaY4cBWDyzZufGe3Ck8fvTzsvWBBLZiZc4EUgK+EQJr2XzADVWfUov\n3cLQp9VZTlOsy+oVSX6BcW0KlIqwmKrdO/xXS9Nxn6NTMfHDjD9YYcAK\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vipmcihysterh3.dooricheh.com"
+            },
+            "up_mbps": 30,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "Turkey3 \ud83c\uddf9\ud83c\uddf7"
+        },
+        {
+            "down_mbps": 40,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "kamranfxvip:kamranfxvip72823",
+            "server": "vipmcihyster4.dooricheh.com",
+            "server_port": 443,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUGoioUtwkecA0ZCDf4zYfi5s40WswDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyODExMTUwMFoXDTM4MTIyNDExMTUwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnCJW3wBjOlFA6GZ6UZzMILmba5vKgKC1GJb\nFLPoMKZSGCj7krko8dLCAIJw6+bQw5mMf9MWo0OPIQJYQ663H139tM1Xn9BgzDpo\nTFdzmpAPV/p2nNAvC17mJnB/s+zJpfAMT8daDOkvEGMPx5MROBVLuGMz3xz9nQb8\n62X9VpztKqCEaMQ1PtKAt0ehJiyvU0V+X5RCkGDvYmYPWl32QhJCIzpmyaQM8D0Q\naMbxTADLvY+bzlvuNvJFbwkJ9NgemfyPmmuulLig8s//ZQshUHilpUvmXgiu6Dx1\nKh7XN8wZe61jmoG4OGT5hEwGPajOfr0cTrSOUHfQFzzUsxgzjQIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQfhW5K9SLOspEGe/Z3pgczuUcIEDAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQChAF8SZ722D2Za+9z7ti7JdrY4zLQo\nuprmJsMXSqNx09+OBeJnUv4fYYUaMWE6uNZHrzDsD2iqwZjxqcPBss1+878C/IY2\n0e6NEPefNO6fM0tWl+XM4OmrM1NB6EbX1OO2btGfbGgUaeWbrAybDVl5t0xmA/WH\ncOTEX/3rGppXPYm/JwwYdjIRjv5v8boJX4ulbwsnLq+awSKYNTv5epR9IY3N9uA8\n3dX5nG68ewOaY4cBWDyzZufGe3Ck8fvTzsvWBBLZiZc4EUgK+EQJr2XzADVWfUov\n3cLQp9VZTlOsy+oVSX6BcW0KlIqwmKrdO/xXS9Nxn6NTMfHDjD9YYcAK\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vipmcihysterh3.dooricheh.com"
+            },
+            "up_mbps": 20,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "Turkey4 \ud83c\uddf9\ud83c\uddf7"
+        },
+        {
+            "down_mbps": 20,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "kamranfxvip:kamranfxvip72823",
+            "server": "vipmcihyster5.dooricheh.com",
+            "server_port": 443,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUGoioUtwkecA0ZCDf4zYfi5s40WswDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyODExMTUwMFoXDTM4MTIyNDExMTUwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnCJW3wBjOlFA6GZ6UZzMILmba5vKgKC1GJb\nFLPoMKZSGCj7krko8dLCAIJw6+bQw5mMf9MWo0OPIQJYQ663H139tM1Xn9BgzDpo\nTFdzmpAPV/p2nNAvC17mJnB/s+zJpfAMT8daDOkvEGMPx5MROBVLuGMz3xz9nQb8\n62X9VpztKqCEaMQ1PtKAt0ehJiyvU0V+X5RCkGDvYmYPWl32QhJCIzpmyaQM8D0Q\naMbxTADLvY+bzlvuNvJFbwkJ9NgemfyPmmuulLig8s//ZQshUHilpUvmXgiu6Dx1\nKh7XN8wZe61jmoG4OGT5hEwGPajOfr0cTrSOUHfQFzzUsxgzjQIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQfhW5K9SLOspEGe/Z3pgczuUcIEDAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQChAF8SZ722D2Za+9z7ti7JdrY4zLQo\nuprmJsMXSqNx09+OBeJnUv4fYYUaMWE6uNZHrzDsD2iqwZjxqcPBss1+878C/IY2\n0e6NEPefNO6fM0tWl+XM4OmrM1NB6EbX1OO2btGfbGgUaeWbrAybDVl5t0xmA/WH\ncOTEX/3rGppXPYm/JwwYdjIRjv5v8boJX4ulbwsnLq+awSKYNTv5epR9IY3N9uA8\n3dX5nG68ewOaY4cBWDyzZufGe3Ck8fvTzsvWBBLZiZc4EUgK+EQJr2XzADVWfUov\n3cLQp9VZTlOsy+oVSX6BcW0KlIqwmKrdO/xXS9Nxn6NTMfHDjD9YYcAK\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vipmcihysterh3.dooricheh.com"
+            },
+            "up_mbps": 10,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "Turkey5 \ud83c\uddf9\ud83c\uddf7"
+        },
+        {
+            "down_mbps": 0,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "belgiumdirectmci:belgiumdirectmci56545",
+            "server": "belghyster1.dooricheh.com",
+            "server_port": 443,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUTTka8yPCFyGEcbz/k30WnqmsPgQwDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyNjE2MDAwMFoXDTM4MTIyMjE2MDAwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyrKSVA9GIaAivI/Peu240S9O1Pk2beNWajR6\nKoFlvuDc1EeoceDsPgUS2qtoyYs5SyOdHuYdfh55/MyWlbhmCWIa/WeU4SsVASm6\nZy6Ag864PNknqGJz6pJ0fb9rlIVk7gDOQ2MVsARN1bFQACxy3ap/Lly47s46xnKf\noLmwdiH1hcCTzQoDcrCeXu2wmnIUsJ1IqKMztYNa7/h9+5j3O9TVLAIBzmEMhWBr\nihJ33L9Jwnb+HRmH0bhwbUw38sVo/z5yp7eErcyWH0fCU9dve08E/xqj+kxI/t4C\nF6JXfEDRvAXx02iCHeZFpkQSUa9w1wFnuSV6WN2djeH8MoqwfwIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRHcmm52ef0L3Y8rYLdDHQgV0177zAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAP/0xAW61x+O6q2Fu5Aa6s94AdRu6K\nvWwwvH2pVzvSVUL/o8nkqWtdDy6ydF2Tjbh6m/e2nLYQana+b7otbv/hGQWfjt2y\n9sRc3rLwHTiH2Nrvo8I6t9NpAAVrzfFp2nKvT4OuE7TI2peJRrEjp3HHj+ppy5Gs\n7x1RGreM6uC/08JXZNFTpoM7b570cpwWqBZWYT/u34D67N2FTQTgvG7fOUXJlyNb\n75bSsa3TxwSRuSnCL7kG3/ukqQPs1DJtsF5JfjhqrjdL34TYslsWogSnTsuT01NH\nL1yGEOrnNukEznFp+ciSQbde2QqoYdMtA+saE4UXfHjaEwhqdF6diTeW\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "belghysterh3.dooricheh.com"
+            },
+            "up_mbps": 0,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "Belgium1 \ud83c\udde7\ud83c\uddea"
+        },
+        {
+            "down_mbps": 80,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "belgiumdirectmci:belgiumdirectmci56545",
+            "server": "belghyster2.dooricheh.com",
+            "server_port": 443,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUTTka8yPCFyGEcbz/k30WnqmsPgQwDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyNjE2MDAwMFoXDTM4MTIyMjE2MDAwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyrKSVA9GIaAivI/Peu240S9O1Pk2beNWajR6\nKoFlvuDc1EeoceDsPgUS2qtoyYs5SyOdHuYdfh55/MyWlbhmCWIa/WeU4SsVASm6\nZy6Ag864PNknqGJz6pJ0fb9rlIVk7gDOQ2MVsARN1bFQACxy3ap/Lly47s46xnKf\noLmwdiH1hcCTzQoDcrCeXu2wmnIUsJ1IqKMztYNa7/h9+5j3O9TVLAIBzmEMhWBr\nihJ33L9Jwnb+HRmH0bhwbUw38sVo/z5yp7eErcyWH0fCU9dve08E/xqj+kxI/t4C\nF6JXfEDRvAXx02iCHeZFpkQSUa9w1wFnuSV6WN2djeH8MoqwfwIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRHcmm52ef0L3Y8rYLdDHQgV0177zAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAP/0xAW61x+O6q2Fu5Aa6s94AdRu6K\nvWwwvH2pVzvSVUL/o8nkqWtdDy6ydF2Tjbh6m/e2nLYQana+b7otbv/hGQWfjt2y\n9sRc3rLwHTiH2Nrvo8I6t9NpAAVrzfFp2nKvT4OuE7TI2peJRrEjp3HHj+ppy5Gs\n7x1RGreM6uC/08JXZNFTpoM7b570cpwWqBZWYT/u34D67N2FTQTgvG7fOUXJlyNb\n75bSsa3TxwSRuSnCL7kG3/ukqQPs1DJtsF5JfjhqrjdL34TYslsWogSnTsuT01NH\nL1yGEOrnNukEznFp+ciSQbde2QqoYdMtA+saE4UXfHjaEwhqdF6diTeW\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "belghysterh3.dooricheh.com"
+            },
+            "up_mbps": 40,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "Belgium2 \ud83c\udde7\ud83c\uddea"
+        },
+        {
+            "down_mbps": 80,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "kamranfxvip:kamranfxvip72823",
+            "server": "vipmcihystertunir.dooricheh.com",
+            "server_port": 21859,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUGoioUtwkecA0ZCDf4zYfi5s40WswDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyODExMTUwMFoXDTM4MTIyNDExMTUwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnCJW3wBjOlFA6GZ6UZzMILmba5vKgKC1GJb\nFLPoMKZSGCj7krko8dLCAIJw6+bQw5mMf9MWo0OPIQJYQ663H139tM1Xn9BgzDpo\nTFdzmpAPV/p2nNAvC17mJnB/s+zJpfAMT8daDOkvEGMPx5MROBVLuGMz3xz9nQb8\n62X9VpztKqCEaMQ1PtKAt0ehJiyvU0V+X5RCkGDvYmYPWl32QhJCIzpmyaQM8D0Q\naMbxTADLvY+bzlvuNvJFbwkJ9NgemfyPmmuulLig8s//ZQshUHilpUvmXgiu6Dx1\nKh7XN8wZe61jmoG4OGT5hEwGPajOfr0cTrSOUHfQFzzUsxgzjQIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQfhW5K9SLOspEGe/Z3pgczuUcIEDAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQChAF8SZ722D2Za+9z7ti7JdrY4zLQo\nuprmJsMXSqNx09+OBeJnUv4fYYUaMWE6uNZHrzDsD2iqwZjxqcPBss1+878C/IY2\n0e6NEPefNO6fM0tWl+XM4OmrM1NB6EbX1OO2btGfbGgUaeWbrAybDVl5t0xmA/WH\ncOTEX/3rGppXPYm/JwwYdjIRjv5v8boJX4ulbwsnLq+awSKYNTv5epR9IY3N9uA8\n3dX5nG68ewOaY4cBWDyzZufGe3Ck8fvTzsvWBBLZiZc4EUgK+EQJr2XzADVWfUov\n3cLQp9VZTlOsy+oVSX6BcW0KlIqwmKrdO/xXS9Nxn6NTMfHDjD9YYcAK\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "vipmcihysterh3.dooricheh.com"
+            },
+            "up_mbps": 40,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "TUNNEL \ud83c\uddee\ud83c\uddf7>\ud83c\uddf9\ud83c\uddf7"
+        },
+        {
+            "down_mbps": 80,
+            "obfs": {
+                "password": "hyspass",
+                "type": "salamander"
+            },
+            "password": "belgiumtun:belgiumtun54963",
+            "server": "belgtunir.dooricheh.com",
+            "server_port": 53425,
+            "tls": {
+                "alpn": [
+                    "h3"
+                ],
+                "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUTTka8yPCFyGEcbz/k30WnqmsPgQwDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyNjE2MDAwMFoXDTM4MTIyMjE2MDAwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyrKSVA9GIaAivI/Peu240S9O1Pk2beNWajR6\nKoFlvuDc1EeoceDsPgUS2qtoyYs5SyOdHuYdfh55/MyWlbhmCWIa/WeU4SsVASm6\nZy6Ag864PNknqGJz6pJ0fb9rlIVk7gDOQ2MVsARN1bFQACxy3ap/Lly47s46xnKf\noLmwdiH1hcCTzQoDcrCeXu2wmnIUsJ1IqKMztYNa7/h9+5j3O9TVLAIBzmEMhWBr\nihJ33L9Jwnb+HRmH0bhwbUw38sVo/z5yp7eErcyWH0fCU9dve08E/xqj+kxI/t4C\nF6JXfEDRvAXx02iCHeZFpkQSUa9w1wFnuSV6WN2djeH8MoqwfwIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRHcmm52ef0L3Y8rYLdDHQgV0177zAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAP/0xAW61x+O6q2Fu5Aa6s94AdRu6K\nvWwwvH2pVzvSVUL/o8nkqWtdDy6ydF2Tjbh6m/e2nLYQana+b7otbv/hGQWfjt2y\n9sRc3rLwHTiH2Nrvo8I6t9NpAAVrzfFp2nKvT4OuE7TI2peJRrEjp3HHj+ppy5Gs\n7x1RGreM6uC/08JXZNFTpoM7b570cpwWqBZWYT/u34D67N2FTQTgvG7fOUXJlyNb\n75bSsa3TxwSRuSnCL7kG3/ukqQPs1DJtsF5JfjhqrjdL34TYslsWogSnTsuT01NH\nL1yGEOrnNukEznFp+ciSQbde2QqoYdMtA+saE4UXfHjaEwhqdF6diTeW\n-----END CERTIFICATE-----",
+                "enabled": true,
+                "insecure": false,
+                "server_name": "belghysterh3.dooricheh.com"
+            },
+            "up_mbps": 40,
+            "type": "hysteria2",
+            "domain_strategy": "",
+            "tag": "TUNNEL \ud83c\uddee\ud83c\uddf7>\ud83c\udde7\ud83c\uddea"
+        },
+        {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "bypass",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
+        }
+    ],
+    "route": {
+        "auto_detect_interface": true,
+        "rules": [
+            {
+                "outbound": "dns-out",
+                "port": [
+                    53
+                ]
+            },
+            {
+                "inbound": [
+                    "dns-in"
+                ],
+                "outbound": "dns-out"
+            },
+            {
+                "geoip": [
+                    "ir"
+                ],
+                "outbound": "bypass"
+            },
+            {
+                "ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ],
+                "outbound": "block",
+                "source_ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ]
+            }
+        ]
+    }
+}
