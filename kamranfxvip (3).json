@@ -98,19 +98,6 @@
       ]
     },
     {
-      "type": "urltest",
-      "tag": "auto",
-      "outbounds": [
-        "Turkey1 🇹🇷",
-        "Turkey2 🇹🇷",
-        "Turkey3 🇹🇷",
-        "Turkey4 🇹🇷",
-        "Turkey5 🇹🇷",
-        "Belgium1 🇧🇪",
-        "Belgium2 🇧🇪",
-        "TUNNEL 🇮🇷>🇹🇷",
-        "TUNNEL 🇮🇷>🇧🇪"
-      ],
       "url": "http://cp.cloudflare.com/",
       "interval": "2m",
       "tolerance": 30,
