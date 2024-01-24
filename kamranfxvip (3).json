@@ -111,11 +111,12 @@
         "TUNNEL 🇮🇷>🇹🇷",
         "TUNNEL 🇮🇷>🇧🇪"
       ],
+{
       "url": "http://cp.cloudflare.com/",
       "interval": "2m",
       "tolerance": 30,
       "interrupt_exist_connections": true
-    },
+  },
     {
       "down_mbps": 0,
       "obfs": {
