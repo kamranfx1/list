@@ -97,7 +97,7 @@
         "TUNNEL 🇮🇷>🇹🇷",
         "TUNNEL 🇮🇷>🇧🇪"   
     },
-   
+  { 
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
