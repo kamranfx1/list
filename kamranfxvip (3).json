@@ -84,7 +84,7 @@
   "outbounds": [
     {
       "type": "selector",
-      "tag": "DOORICHEH 📆 29",
+      "tag": "DOORICHEH 📆 32",
       "outbounds": [
         "Turkey1 🇹🇷",
         "Turkey2 🇹🇷",
@@ -96,6 +96,26 @@
         "TUNNEL 🇮🇷>🇹🇷",
         "TUNNEL 🇮🇷>🇧🇪"
       ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "Turkey1 🇹🇷",
+        "Turkey2 🇹🇷",
+        "Turkey3 🇹🇷",
+        "Turkey4 🇹🇷",
+        "Turkey5 🇹🇷",
+        "Belgium1 🇧🇪",
+        "Belgium2 🇧🇪",
+        "TUNNEL 🇮🇷>🇹🇷",
+        "TUNNEL 🇮🇷>🇧🇪"
+      ],
+      "url": "http://cp.cloudflare.com/",
+      "interval": "2m",
+      "tolerance": 30,
+      "idle_timeout": "120m",
+      "interrupt_exist_connections": true
     },
     {
       "down_mbps": 0,
@@ -218,7 +238,7 @@
         "password": "hyspass",
         "type": "salamander"
       },
-      "password": "belgiumdirectmci:belgiumdirectmci56545",
+      "password": "kamranfxvip:kamranfxvip72823",
       "server": "belghyster1.dooricheh.com",
       "server_port": 443,
       "tls": {
@@ -241,7 +261,7 @@
         "password": "hyspass",
         "type": "salamander"
       },
-      "password": "belgiumdirectmci:belgiumdirectmci56545",
+      "password": "kamranfxvip:kamranfxvip72823",
       "server": "belghyster2.dooricheh.com",
       "server_port": 443,
       "tls": {
@@ -287,7 +307,7 @@
         "password": "hyspass",
         "type": "salamander"
       },
-      "password": "belgiumtun:belgiumtun54963",
+      "password": "kamranfxvip:kamranfxvip72823",
       "server": "belgtunir.dooricheh.com",
       "server_port": 53425,
       "tls": {
