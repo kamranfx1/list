@@ -114,7 +114,6 @@
       "url": "http://cp.cloudflare.com/",
       "interval": "2m",
       "tolerance": 30,
-      "idle_timeout": "120m",
       "interrupt_exist_connections": true
     },
     {
