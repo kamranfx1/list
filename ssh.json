@@ -93,8 +93,6 @@
             "type": "mixed"
         }
     ],
-    "outbounds": [
-        {
   "outbounds": [
     {
       "password": "freeforiran",
