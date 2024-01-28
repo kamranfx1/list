@@ -208,40 +208,13 @@
             }
         },
         {
-            "tag": "🟡BarayeArmita🇫🇮 | 3",
-            "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 2053,
-            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dl1.baraye-azadi.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/download",
-                "headers": {
-                    "Host": "dl1.baraye-azadi.xyz"
-                },
-                "max_early_data": 2048,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
+      "password": "freeforiran",
+      "server": "2.iraniancpi.uk",
+      "server_port": 55627,
+      "user": "irancpi",
+      "type": "ssh",
+      "domain_strategy": "",
+      "tag": "proxy🇩🇪2"
         },
         {
             "tag": "🟢BarayeKiyan🇫🇮 | 4",
