@@ -1,5 +1,5 @@
 {
-"log": {
+    "log": {
         "disabled": false,
         "level": "fatal",
         "timestamp": true
@@ -94,7 +94,8 @@
             "type": "mixed"
         }
     ],
-  "outbounds": [
+    "outbounds": [
+        {
     {
       "password": "freeforiran",
       "server": "1.iraniancpi.uk",
