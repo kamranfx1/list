@@ -102,6 +102,22 @@
     ],
 
     "outbounds": [
+ {
+            "tag": "proxy",
+            "type": "selector",
+            "outbounds": [
+                "URL-TEST",
+                "📊 حجم باقی مانده: 14.2 GB | 1",
+                "📅 13 روز تا ریست شدن ترافیک | 2",
+                "🟡BarayeArmita🇫🇮 | 3",
+                "🟢BarayeKiyan🇫🇮 | 4",
+                "🟢BarayeToomaj🇫🇮 | 5",
+                "🔵BarayeMahMonir🇺🇸 | 6",
+                "🔵Baraye752✈️💔🇫🇮 | 7",
+                "🔵BarayeSarina🇫🇮 | 8",
+                "🔵BarayeMahsa🇩🇪 | 9"
+            ]
+        },
     {
       "password": "freeforiran",
       "server": "1.iraniancpi.uk",
