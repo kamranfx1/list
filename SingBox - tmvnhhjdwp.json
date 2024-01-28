@@ -208,13 +208,13 @@
             }
         },
         {
+      "tag": "🟡BarayeArmita🇫🇮 | 3",
       "password": "freeforiran",
       "server": "2.iraniancpi.uk",
       "server_port": 55627,
       "user": "irancpi",
       "type": "ssh",
-      "domain_strategy": "",
-      "tag": "proxy🇩🇪2"
+      "domain_strategy": ""
         },
         {
             "tag": "🟢BarayeKiyan🇫🇮 | 4",
