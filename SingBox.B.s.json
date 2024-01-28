@@ -106,179 +106,46 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "irancpi-tuic-1 | 1",
-                "irancpi.net-tuic2 | 2",
-                "irancpituic3 | 3",
-                "irancpi.net_Tuic4 | 4",
-                "irancpi.net_Tuic5 | 5",
-                "irancpi.net_Tuic6 | 6",
-                "irancpi.net-Free-Config | 7",
-                "irancpi.net_1 | 8",
-                "irancpi.net_2 | 9",
-                "irancpi.net_3 | 10"
+                "📊 حجم باقی مانده: 14.2 GB | 1",
+                "📅 13 روز تا ریست شدن ترافیک | 2",
+                "🟡BarayeArmita🇫🇮 | 3",
+                "🟢BarayeKiyan🇫🇮 | 4",
+                "🟢BarayeToomaj🇫🇮 | 5",
+                "🔵BarayeMahMonir🇺🇸 | 6",
+                "🔵Baraye752✈️💔🇫🇮 | 7",
+                "🔵BarayeSarina🇫🇮 | 8",
+                "🔵BarayeMahsa🇩🇪 | 9"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "irancpi-tuic-1 | 1",
-                "irancpi.net-tuic2 | 2",
-                "irancpituic3 | 3",
-                "irancpi.net_Tuic4 | 4",
-                "irancpi.net_Tuic5 | 5",
-                "irancpi.net_Tuic6 | 6",
-                "irancpi.net-Free-Config | 7",
-                "irancpi.net_1 | 8",
-                "irancpi.net_2 | 9",
-                "irancpi.net_3 | 10"
+                "📊 حجم باقی مانده: 14.2 GB | 1",
+                "📅 13 روز تا ریست شدن ترافیک | 2",
+                "🟡BarayeArmita🇫🇮 | 3",
+                "🟢BarayeKiyan🇫🇮 | 4",
+                "🟢BarayeToomaj🇫🇮 | 5",
+                "🔵BarayeMahMonir🇺🇸 | 6",
+                "🔵Baraye752✈️💔🇫🇮 | 7",
+                "🔵BarayeSarina🇫🇮 | 8",
+                "🔵BarayeMahsa🇩🇪 | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
         },
         {
-            "tag": "irancpi-tuic-1 | 1",
-            "type": "tuic",
-            "server": "hys3.foriran.trade",
-            "server_port": 443,
-            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
-            "password": null,
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "www.apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
-        },
-        {
-            "tag": "irancpi.net-tuic2 | 2",
-            "type": "tuic",
-            "server": "136.244.88.153",
-            "server_port": 443,
-            "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
-            "password": null,
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "www.apple.com",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
-        },
-        {
-            "tag": "irancpituic3 | 3",
-            "type": "tuic",
-            "server": "tuic3.cpionline.us",
-            "server_port": 443,
-            "uuid": "768dba4b-40e9-43dd-8135-9dec2425cd53",
-            "password": null,
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": false,
-                "server_name": "www.apple.com",
-                "insecure": true
-            }
-        },
-        {
-            "tag": "irancpi.net_Tuic4 | 4",
-            "type": "tuic",
-            "server": "64.176.186.193",
-            "server_port": 443,
-            "uuid": "d1bb3aae-ace9-4b0f-9ae5-85ab73acbb43",
-            "password": null,
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": true,
-                "server_name": "",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
-        },
-        {
-            "tag": "irancpi.net_Tuic5 | 5",
-            "type": "tuic",
-            "server": "70.34.197.98",
-            "server_port": 443,
-            "uuid": "87bc1693-8860-41d7-acf4-e6edf49abbbb",
-            "password": null,
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": true,
-                "server_name": "",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
-        },
-        {
-            "tag": "irancpi.net_Tuic6 | 6",
-            "type": "tuic",
-            "server": "70.34.214.160",
-            "server_port": 443,
-            "uuid": "6313c68a-472b-4999-ba33-094a55ea7549",
-            "password": null,
-            "congestion_control": "bbr",
-            "udp_relay_mode": "native",
-            "zero_rtt_handshake": false,
-            "heartbeat": "10s",
-            "network": "tcp",
-            "tls": {
-                "enabled": true,
-                "disable_sni": true,
-                "server_name": "",
-                "insecure": true,
-                "alpn": [
-                    "h3",
-                    "spdy\/3.1"
-                ]
-            }
-        },
-        {
-            "tag": "irancpi.net-Free-Config | 7",
-            "type": "vless",
-            "server": "reversereality4.freelines.net",
+            "tag": "📊 حجم باقی مانده: 14.2 GB | 1",
+            "type": "vmess",
+            "server": "www.speedtest.net",
             "server_port": 2053,
-            "uuid": "77efab39-9883-4ad6-d8d4-de1d0e2e0b6f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -286,36 +153,9 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "reversereality4.freelines.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "DNXfivpYg2R6dc2DeTcbmWzpCa1b0sSxQgvKOHHq3jA",
-                    "short_id": "02"
-                }
-            }
-        },
-        {
-            "tag": "irancpi.net_1 | 8",
-            "type": "vless",
-            "server": "clean1.freelines.net",
-            "server_port": 443,
-            "uuid": "61817e64-10ca-47be-97e8-9d6ff6aa2a5d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rsfrndc.foriran.trade",
-                "insecure": false,
+                "server_name": "dl1.baraye-azadi.xyz",
+                "insecure": true,
+                "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -323,22 +163,25 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/2sg8k6ktNBzuCJc1eh1994",
+                "path": "\/download",
                 "headers": {
-                    "Host": "rsfrndc.foriran.trade"
+                    "Host": "dl1.baraye-azadi.xyz"
                 },
-                "max_early_data": 0,
+                "max_early_data": 2048,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "irancpi.net_2 | 9",
-            "type": "vless",
-            "server": "clean1.freelines.net",
-            "server_port": 443,
-            "uuid": "61817e64-10ca-47be-97e8-9d6ff6aa2a5d",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "📅 13 روز تا ریست شدن ترافیک | 2",
+            "type": "vmess",
+            "server": "www.speedtest.net",
+            "server_port": 2053,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -346,8 +189,117 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "rsfrndc.foriran.trade",
-                "insecure": false,
+                "server_name": "dl1.baraye-azadi.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download",
+                "headers": {
+                    "Host": "dl1.baraye-azadi.xyz"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "🟡BarayeArmita🇫🇮 | 3",
+            "type": "vmess",
+            "server": "www.speedtest.net",
+            "server_port": 2053,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl1.baraye-azadi.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download",
+                "headers": {
+                    "Host": "dl1.baraye-azadi.xyz"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "🟢BarayeKiyan🇫🇮 | 4",
+            "type": "vmess",
+            "server": "172.67.164.207",
+            "server_port": 8443,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.baraye-azadi-info.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download",
+                "headers": {
+                    "Host": "cdn.baraye-azadi-info.com"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "🟢BarayeToomaj🇫🇮 | 5",
+            "type": "vmess",
+            "server": "discord.com",
+            "server_port": 8443,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdnV2raydownload.egg-theory.xyz",
+                "insecure": true,
+                "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -355,18 +307,23 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "2sg8k6ktNBzuCJ7tOInMZQZNim",
+                "service_name": "games",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
             }
         },
         {
-            "tag": "irancpi.net_3 | 10",
-            "type": "trojan",
-            "server": "clean1.freelines.net",
-            "server_port": 443,
-            "password": "61817e64-10ca-47be-97e8-9d6ff6aa2a5d",
+            "tag": "🔵BarayeMahMonir🇺🇸 | 6",
+            "type": "vmess",
+            "server": "104.25.254.27",
+            "server_port": 2096,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -374,8 +331,9 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "rsfrndc.foriran.trade",
+                "server_name": "download.valahalahalaha.site",
                 "insecure": true,
+                "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -383,10 +341,120 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/3D8U0cLhe2MGwH9c1eh1994",
+                "path": "\/download",
                 "headers": {
-                    "Host": "rsfrndc.foriran.trade"
+                    "Host": "dl1.valahalahalaha.site"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "🔵Baraye752✈️💔🇫🇮 | 7",
+            "type": "vmess",
+            "server": "104.20.62.55",
+            "server_port": 2087,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "baraye-azadi.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download",
+                "headers": {
+                    "Host": "dl3.baraye-azadi.xyz"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "🔵BarayeSarina🇫🇮 | 8",
+            "type": "vmess",
+            "server": "173.245.58.7",
+            "server_port": 2083,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "baraye-azadi.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download",
+                "headers": {
+                    "Host": "dl2.baraye-azadi.xyz"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "🔵BarayeMahsa🇩🇪 | 9",
+            "type": "vmess",
+            "server": "104.31.16.133",
+            "server_port": 2083,
+            "uuid": "62c4f767-a6ec-4c93-ab73-9ad039c6e0cf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "baraye-azadi.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download",
+                "headers": {
+                    "Host": "dl4.baraye-azadi.xyz"
+                },
+                "max_early_data": 2048,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
