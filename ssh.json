@@ -195,123 +195,89 @@
       "domain_strategy": "",
       "tag": "proxy🇩🇪1"
     },
-    {
-      "tag": "direct",
-      "type": "direct"
-    },
-    {
-      "tag": "bypass",
-      "type": "direct"
-    },
-    {
-      "tag": "block",
-      "type": "block"
-    },
-    {
-      "tag": "dns-out",
-      "type": "dns"
+     {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "bypass",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
+        }
+    ],
+    "route": {
+        "auto_detect_interface": true,
+        "override_android_vpn": true,
+        "final": "proxy",
+        "geoip": {
+            "download_url": "https:\/\/github.com\/MiSaturo\/sing-box-geoip-ir\/releases\/latest\/download\/geoip.db",
+            "download_detour": "direct"
+        },
+        "geosite": {
+            "download_url": "https:\/\/github.com\/MasterKia\/iran-hosted-domains\/releases\/latest\/download\/iran-geosite.db",
+            "download_detour": "direct"
+        },
+        "rules": [
+            {
+                "outbound": "dns-out",
+                "port": [
+                    53
+                ]
+            },
+            {
+                "inbound": [
+                    "dns-in"
+                ],
+                "outbound": "dns-out"
+            },
+            {
+                "domain_suffix": [
+                    "ir"
+                ],
+                "outbound": "bypass"
+            },
+            {
+                "geoip": [
+                    "ir"
+                ],
+                "outbound": "bypass"
+            },
+            {
+                "geosite": [
+                    "ir"
+                ],
+                "outbound": "direct"
+            },
+            {
+                "geosite": [
+                    "other"
+                ],
+                "outbound": "direct"
+            },
+            {
+                "geosite": [
+                    "ads"
+                ],
+                "outbound": "block"
+            },
+            {
+                "ip_cidr": [
+                    "224.0.0.0\/3",
+                    "ff00::\/8"
+                ],
+                "outbound": "block",
+                "source_ip_cidr": [
+                    "224.0.0.0\/3",
+                    "ff00::\/8"
+                ]
+            }
+        ]
     }
-  ],
-  "route": {
-    "auto_detect_interface": true,
-    "rules": [
-      {
-        "outbound": "dns-out",
-        "port": [
-          53
-        ]
-      },
-      {
-        "inbound": [
-          "dns-in"
-        ],
-        "outbound": "dns-out"
-      },
-      {
-        "network": [
-          "udp"
-        ],
-        "outbound": "block",
-        "port": [
-          443
-        ],
-        "port_range": []
-      },
-      {
-        "geosite": [
-          "category-ads-all"
-        ],
-        "outbound": "block"
-      },
-      {
-        "domain_suffix": [
-          "appcenter.ms",
-          "app-measurement.com",
-          "firebase.io",
-          "crashlytics.com",
-          "google-analytics.com"
-        ],
-        "outbound": "block"
-      },
-      {
-        "domain_suffix": [
-          "ir"
-        ],
-        "outbound": "bypass"
-      },
-      {
-        "geoip": [
-          "ir"
-        ],
-        "outbound": "bypass"
-      },
-      {
-        "geosite": [
-          "ir"
-        ],
-        "outbound": "bypass"
-      },
-      {
-        "geoip": [
-          "ir"
-        ],
-        "outbound": "bypass"
-      },
-      {
-        "domain_regex": [
-          ".+\\.ir$"
-        ],
-        "outbound": "bypass"
-      },
-      {
-        "domain": [
-          "www.jajiga.com",
-          "www.digikala.com"
-        ],
-        "outbound": "bypass"
-      },
-      {
-        "outbound": "bypass",
-        "user_id": [
-          10196,
-          10181,
-          10087,
-          10185,
-          10202,
-          10191
-        ]
-      },
-      {
-        "ip_cidr": [
-          "224.0.0.0/3",
-          "ff00::/8"
-        ],
-        "outbound": "block",
-        "source_ip_cidr": [
-          "224.0.0.0/3",
-          "ff00::/8"
-        ]
-      }
-    ]
-  }
 }
