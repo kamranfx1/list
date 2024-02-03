@@ -174,12 +174,12 @@
     },
 {
       "password": "freeforiran",
-      "server": "7.iraniancpi.uk",
+      "server": "2.iraniancpi.uk",
       "server_port": 55627,
       "user": "irancpi",
       "type": "ssh",
       "domain_strategy": "",
-      "tag": "proxy🇩🇪7"
+      "tag": "proxy🇩🇪2"
     },
 {
       "password": "freeforiran",
