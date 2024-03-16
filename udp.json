@@ -36,17 +36,16 @@
     "rules": [
       {
         "domain": [
-          "hys4.freelines.net",
-          "tuic51.freelines.net",
-          "tuic6.freelines.net",
+          "tuic2.freelines.net",
+          "tuic4.freelines.net",
           "tuic61.freelines.net",
+          "tuic7us2.freelines.net",
           "hys8.freelines.net",
           "hys9.freelines.net",
           "tuic1.freelines.net",
-          "tuic2.freelines.net",
-          "tuic4.freelines.net",
           "tuic5.freelines.net",
-          "tuic7us2.freelines.net",
+          "tuic51.freelines.net",
+          "tuic6.freelines.net",
           "tuic8.iraniancpi.uk"
         ],
         "server": "dns-direct"
@@ -69,12 +68,12 @@
         "188.114.96.3",
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "104.18.203.232",
         "104.18.202.232",
-        "188.114.96.3",
+        "104.18.203.232",
         "188.114.97.3",
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3"
+        "188.114.96.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -116,18 +115,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "Irancpi_hys8 § 0",
-        "irancpi_hys9 § 1",
-        "irancpihys4 § 2",
-        "Tuic1🇳🇱 § 3",
-        "tuic2🇩🇪 § 4",
-        "irancpi.net_Tuic4 § 5",
-        "irancpi.net_Tuic5 § 6",
-        "Tuic51🇸🇪 § 7",
-        "Tuic6🇸🇪 § 8",
-        "irancpi.net_Tuic61 § 9",
-        "Tuic7🇺🇲 § 10",
-        "irancpi_Tuic8 § 11"
+        "hys8🇳🇱 § 0",
+        "hys9🇳🇱 § 1",
+        "Tuic1🇳🇱 § 2",
+        "tuic2🇩🇪 § 3",
+        "Tuic4🇬🇧 § 4",
+        "Tuic5🇸🇪 § 5",
+        "Tuic51🇸🇪 § 6",
+        "Tuic6🇸🇪 § 7",
+        "Tuic61🇸🇪 § 8",
+        "Tuic7🇺🇲 § 9",
+        "Tuic8🇳🇱 § 10",
+        "Hy2🇬🇧  § 11",
+        "hys2🇨🇵 § 12",
+        "Tuic🇸🇪1 § 13",
+        "🟡🟣Tuic🇨🇦NAT2.IPv6 § 14",
+        "tuic🇸🇪1 IPv6 § 15"
       ],
       "default": "auto"
     },
@@ -135,25 +138,29 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "Irancpi_hys8 § 0",
-        "irancpi_hys9 § 1",
-        "irancpihys4 § 2",
-        "Tuic1🇳🇱 § 3",
-        "tuic2🇩🇪 § 4",
-        "irancpi.net_Tuic4 § 5",
-        "irancpi.net_Tuic5 § 6",
-        "Tuic51🇸🇪 § 7",
-        "Tuic6🇸🇪 § 8",
-        "irancpi.net_Tuic61 § 9",
-        "Tuic7🇺🇲 § 10",
-        "irancpi_Tuic8 § 11"
+        "hys8🇳🇱 § 0",
+        "hys9🇳🇱 § 1",
+        "Tuic1🇳🇱 § 2",
+        "tuic2🇩🇪 § 3",
+        "Tuic4🇬🇧 § 4",
+        "Tuic5🇸🇪 § 5",
+        "Tuic51🇸🇪 § 6",
+        "Tuic6🇸🇪 § 7",
+        "Tuic61🇸🇪 § 8",
+        "Tuic7🇺🇲 § 9",
+        "Tuic8🇳🇱 § 10",
+        "Hy2🇬🇧  § 11",
+        "hys2🇨🇵 § 12",
+        "Tuic🇸🇪1 § 13",
+        "🟡🟣Tuic🇨🇦NAT2.IPv6 § 14",
+        "tuic🇸🇪1 IPv6 § 15"
       ],
       "url": "http://www.google.com/generate_204",
       "interval": "10m0s"
     },
     {
       "type": "hysteria2",
-      "tag": "Irancpi_hys8 § 0",
+      "tag": "hys8🇳🇱 § 0",
       "server": "hys8.freelines.net",
       "server_port": 443,
       "obfs": {
@@ -169,7 +176,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "irancpi_hys9 § 1",
+      "tag": "hys9🇳🇱 § 1",
       "server": "hys9.freelines.net",
       "server_port": 443,
       "obfs": {
@@ -184,24 +191,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "irancpihys4 § 2",
-      "server": "hys4.freelines.net",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "8c3ce17b"
-      },
-      "password": "f6e4b19a3110d19d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com\n",
-        "insecure": true
-      }
-    },
-    {
       "type": "tuic",
-      "tag": "Tuic1🇳🇱 § 3",
+      "tag": "Tuic1🇳🇱 § 2",
       "server": "tuic1.freelines.net",
       "server_port": 443,
       "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
@@ -221,7 +212,7 @@
     },
     {
       "type": "tuic",
-      "tag": "tuic2🇩🇪 § 4",
+      "tag": "tuic2🇩🇪 § 3",
       "server": "tuic2.freelines.net",
       "server_port": 443,
       "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
@@ -241,7 +232,7 @@
     },
     {
       "type": "tuic",
-      "tag": "irancpi.net_Tuic4 § 5",
+      "tag": "Tuic4🇬🇧 § 4",
       "server": "tuic4.freelines.net",
       "server_port": 443,
       "uuid": "d1bb3aae-ace9-4b0f-9ae5-85ab73acbb43",
@@ -261,7 +252,7 @@
     },
     {
       "type": "tuic",
-      "tag": "irancpi.net_Tuic5 § 6",
+      "tag": "Tuic5🇸🇪 § 5",
       "server": "tuic5.freelines.net",
       "server_port": 443,
       "uuid": "87bc1693-8860-41d7-acf4-e6edf49abbbb",
@@ -281,7 +272,7 @@
     },
     {
       "type": "tuic",
-      "tag": "Tuic51🇸🇪 § 7",
+      "tag": "Tuic51🇸🇪 § 6",
       "server": "tuic51.freelines.net",
       "server_port": 443,
       "uuid": "87bc1693-8860-41d7-acf4-e6edf49abbbb",
@@ -301,7 +292,7 @@
     },
     {
       "type": "tuic",
-      "tag": "Tuic6🇸🇪 § 8",
+      "tag": "Tuic6🇸🇪 § 7",
       "server": "tuic6.freelines.net",
       "server_port": 443,
       "uuid": "6313c68a-472b-4999-ba33-094a55ea7549",
@@ -321,7 +312,7 @@
     },
     {
       "type": "tuic",
-      "tag": "irancpi.net_Tuic61 § 9",
+      "tag": "Tuic61🇸🇪 § 8",
       "server": "tuic61.freelines.net",
       "server_port": 443,
       "uuid": "6313c68a-472b-4999-ba33-094a55ea7549",
@@ -341,7 +332,7 @@
     },
     {
       "type": "tuic",
-      "tag": "Tuic7🇺🇲 § 10",
+      "tag": "Tuic7🇺🇲 § 9",
       "server": "tuic7us2.freelines.net",
       "server_port": 443,
       "uuid": "731a0ca6-ed14-4775-a6ac-acbcb324d572",
@@ -361,11 +352,93 @@
     },
     {
       "type": "tuic",
-      "tag": "irancpi_Tuic8 § 11",
+      "tag": "Tuic8🇳🇱 § 10",
       "server": "tuic8.iraniancpi.uk",
       "server_port": 443,
       "uuid": "dfc04908-936e-4525-94a7-bd729d5f7d42",
       "password": "6ikEtHLn+sTihow2a41C",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "Hy2🇬🇧  § 11",
+      "server": "178.236.237.84",
+      "server_port": 443,
+      "password": "QtgdPIrjSirZNtFJM01JQUPMvEVfih",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hys2🇨🇵 § 12",
+      "server": "51.159.77.198",
+      "server_port": 53967,
+      "password": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "Tuic🇸🇪1 § 13",
+      "server": "5.42.80.197",
+      "server_port": 1984,
+      "uuid": "c0f2e835-bf14-4392-9c98-b1d636b10473",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "quic",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🟡🟣Tuic🇨🇦NAT2.IPv6 § 14",
+      "server": "2001:470:1d:21d:103::deb5",
+      "server_port": 9600,
+      "uuid": "fbed013d-7017-43af-bc76-19cf5d232d84",
+      "password": "A@a112233",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "disable_sni": true,
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "tuic🇸🇪1 IPv6 § 15",
+      "server": "2a12:5940:b4b9::3f",
+      "server_port": 1984,
+      "uuid": "c0f2e835-bf14-4392-9c98-b1d636b10473",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
       "heartbeat": "10s",
