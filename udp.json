@@ -1,0 +1,456 @@
+{
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "https://8.8.8.8/dns-query",
+        "address_resolver": "dns-direct",
+        "strategy": "prefer_ipv6"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "1.1.1.2",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "hys4.freelines.net",
+          "tuic51.freelines.net",
+          "tuic6.freelines.net",
+          "tuic61.freelines.net",
+          "hys8.freelines.net",
+          "hys9.freelines.net",
+          "tuic1.freelines.net",
+          "tuic2.freelines.net",
+          "tuic4.freelines.net",
+          "tuic5.freelines.net",
+          "tuic7us2.freelines.net",
+          "tuic8.iraniancpi.uk"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain_suffix": ".ir",
+        "geosite": "ir",
+        "server": "dns-direct"
+      },
+      {
+        "domain": "cp.cloudflare.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "188.114.97.3",
+        "188.114.96.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
+        "104.18.203.232",
+        "104.18.202.232",
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "inet6_address": "fdfe:dcba:9876::1/126",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 6450,
+      "override_address": "1.1.1.1",
+      "override_port": 53
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "Irancpi_hys8 § 0",
+        "irancpi_hys9 § 1",
+        "irancpihys4 § 2",
+        "Tuic1🇳🇱 § 3",
+        "tuic2🇩🇪 § 4",
+        "irancpi.net_Tuic4 § 5",
+        "irancpi.net_Tuic5 § 6",
+        "Tuic51🇸🇪 § 7",
+        "Tuic6🇸🇪 § 8",
+        "irancpi.net_Tuic61 § 9",
+        "Tuic7🇺🇲 § 10",
+        "irancpi_Tuic8 § 11"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "Irancpi_hys8 § 0",
+        "irancpi_hys9 § 1",
+        "irancpihys4 § 2",
+        "Tuic1🇳🇱 § 3",
+        "tuic2🇩🇪 § 4",
+        "irancpi.net_Tuic4 § 5",
+        "irancpi.net_Tuic5 § 6",
+        "Tuic51🇸🇪 § 7",
+        "Tuic6🇸🇪 § 8",
+        "irancpi.net_Tuic61 § 9",
+        "Tuic7🇺🇲 § 10",
+        "irancpi_Tuic8 § 11"
+      ],
+      "url": "http://www.google.com/generate_204",
+      "interval": "10m0s"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "Irancpi_hys8 § 0",
+      "server": "hys8.freelines.net",
+      "server_port": 443,
+      "obfs": {
+        "type": "salamander",
+        "password": "fokaS4id3bretay-7rit"
+      },
+      "password": "fokaS4id3bretay-7rit",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "irancpi_hys9 § 1",
+      "server": "hys9.freelines.net",
+      "server_port": 443,
+      "obfs": {
+        "type": "salamander",
+        "password": "sTeki1$re5!8swohopro"
+      },
+      "password": "sTeki1$re5!8swohopro",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "irancpihys4 § 2",
+      "server": "hys4.freelines.net",
+      "server_port": 443,
+      "obfs": {
+        "type": "salamander",
+        "password": "8c3ce17b"
+      },
+      "password": "f6e4b19a3110d19d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com\n",
+        "insecure": true
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "Tuic1🇳🇱 § 3",
+      "server": "tuic1.freelines.net",
+      "server_port": 443,
+      "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+      "password": "e7b1c11f0d40cc95",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "tuic2🇩🇪 § 4",
+      "server": "tuic2.freelines.net",
+      "server_port": 443,
+      "uuid": "38e38f61-b1dd-4b34-90d0-f6222fd7393f",
+      "password": "e7b1c11f0d40cc95",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "irancpi.net_Tuic4 § 5",
+      "server": "tuic4.freelines.net",
+      "server_port": 443,
+      "uuid": "d1bb3aae-ace9-4b0f-9ae5-85ab73acbb43",
+      "password": "Mahsaamini",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "disable_sni": true,
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "irancpi.net_Tuic5 § 6",
+      "server": "tuic5.freelines.net",
+      "server_port": 443,
+      "uuid": "87bc1693-8860-41d7-acf4-e6edf49abbbb",
+      "password": "crivAv10hAdr-fop4Lne",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "disable_sni": true,
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "Tuic51🇸🇪 § 7",
+      "server": "tuic51.freelines.net",
+      "server_port": 443,
+      "uuid": "87bc1693-8860-41d7-acf4-e6edf49abbbb",
+      "password": "crivAv10hAdr-fop4Lne",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "disable_sni": true,
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "Tuic6🇸🇪 § 8",
+      "server": "tuic6.freelines.net",
+      "server_port": 443,
+      "uuid": "6313c68a-472b-4999-ba33-094a55ea7549",
+      "password": "FRebRlCrO+huXaprEwr6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "disable_sni": true,
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "irancpi.net_Tuic61 § 9",
+      "server": "tuic61.freelines.net",
+      "server_port": 443,
+      "uuid": "6313c68a-472b-4999-ba33-094a55ea7549",
+      "password": "FRebRlCrO+huXaprEwr6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "Tuic7🇺🇲 § 10",
+      "server": "tuic7us2.freelines.net",
+      "server_port": 443,
+      "uuid": "731a0ca6-ed14-4775-a6ac-acbcb324d572",
+      "password": "Mashroote_Liberal2024",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "disable_sni": true,
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "irancpi_Tuic8 § 11",
+      "server": "tuic8.iraniancpi.uk",
+      "server_port": 443,
+      "uuid": "dfc04908-936e-4525-94a7-bd729d5f7d42",
+      "password": "6ikEtHLn+sTihow2a41C",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "15-20",
+        "sleep": "5-8"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "geoip": {
+      "path": "geo-assets/sagernet-sing-geoip-geoip.db"
+    },
+    "geosite": {
+      "path": "geo-assets/sagernet-sing-geosite-geosite.db"
+    },
+    "rules": [
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "geoip": "private",
+        "outbound": "bypass"
+      },
+      {
+        "domain_suffix": ".ir",
+        "geosite": "ir",
+        "geoip": "ir",
+        "outbound": "bypass"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:6756"
+    }
+  }
+}
