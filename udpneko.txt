@@ -17,3 +17,14 @@ warp://162.159.192.181:3138/?ifp=1-5&&detour=tuic://07993852-4fa6-49c5-ae23-b619
 warp://162.159.192.181:3138/?ifp=1-5&&detour=vless://f51a3817-8655-4d95-8855-18f1656e27a8@46.226.167.45:30871/?type=grpc&encryption=none&flow=&sni=microsoft.com&fp=firefox&security=reality&pbk=0xMebIDF2O671nHRF_RTEh4fVeEt2au0XQtum9hDP2Y&sid=b96e60ba3511#%F0%9F%9F%A1%F0%9F%9F%A3A%F0%9F%87%A8%F0%9F%87%B5R.G.ipv4
 warp://188.114.97.120:1843/?ifp=1-5&&detour=hy2://sTeki1$re5!8swohopro@hys9.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=sTeki1%24re5%218swohopro#c_warp&hys1
 warp://162.159.192.181:3138/?ifp=1-5&&detour=hy2://sTeki1$re5!8swohopro@hys9.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=sTeki1%24re5%218swohopro#c_warp&hys2
+warp://188.114.97.120:1843/?ifp=1-5&&detour=hy2://sTeki1$re5!8swohopro@hys9.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=sTeki1%24re5%218swohopro#irancpi_warp&hys1
+
+warp://162.159.192.181:3138/?ifp=1-5&&detour=hy2://sTeki1$re5!8swohopro@hys9.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=sTeki1%24re5%218swohopro#irancpi_warp&hys2
+
+warp://188.114.97.120:1843/?ifp=1-5&&detour=hy2://9ijufI4LW_ehlst!Pho-@hys7.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=9ijufI4LW_ehlst%21Pho-#irancpi_warp&hys3
+
+warp://162.159.192.181:3138/?ifp=1-5&&detour=hy2://9ijufI4LW_ehlst!Pho-@hys7.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=9ijufI4LW_ehlst%21Pho-#irancpi_warp&hys4
+
+warp://188.114.97.120:1843/?ifp=1-5&&detour=hy2://fokaS4id3bretay-7rit@hys8.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=fokaS4id3bretay-7rit#irancpi_warp&hys5
+
+warp://162.159.192.181:3138/?ifp=1-5&&detour=hy2://fokaS4id3bretay-7rit@hys8.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=fokaS4id3bretay-7rit#irancpi_warp&hys6
