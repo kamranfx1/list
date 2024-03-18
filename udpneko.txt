@@ -28,3 +28,5 @@ warp://162.159.192.181:3138/?ifp=1-5&&detour=hy2://9ijufI4LW_ehlst!Pho-@hys7.fre
 warp://188.114.97.120:1843/?ifp=1-5&&detour=hy2://fokaS4id3bretay-7rit@hys8.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=fokaS4id3bretay-7rit#irancpi_warp&hys5
 
 warp://162.159.192.181:3138/?ifp=1-5&&detour=hy2://fokaS4id3bretay-7rit@hys8.freelines.net:443/?insecure=1&sni=google.com&obfs=salamander&obfs-password=fokaS4id3bretay-7rit#irancpi_warp&hys6
+warp://162.159.192.181:3138/?ifp=1-5&&detour=tuic://c0f2e835-bf14-4392-9c98-b1d636b10473@5.42.80.197:1984/?congestion_control=bbr&udp_relay_mode=quic&sni=www.apple.com&alpn=h3%2Cspdy%2F3.1&allow_insecure=1#Tuic%F0%9F%87%B8%F0%9F%87%AA1
+warp://162.159.192.181:3138/?ifp=1-5&&detour=tuic://fbed013d-7017-43af-bc76-19cf5d232d84:A%40a112233@198.50.119.130:9600/?congestion_control=bbr&udp_relay_mode=quic&sni=www.speedtest.net&alpn=h3%2Cspdy%2F3.1&allow_insecure=1#Tuic%20IPv4%F0%9F%87%A8%F0%9F%87%A6N2
