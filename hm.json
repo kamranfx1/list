@@ -120,11 +120,11 @@
         {
             "down_mbps": 0,
             "obfs": {
-                "password": "hyspass",
+                "password": "hyspasss",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "vipmcihyster1.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "vipmcihyster11.dooricheh.com",
             "server_port": 443,
             "tls": {
                 "alpn": [
@@ -146,8 +146,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "vipmcihyster2.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "vipmcihyster22.dooricheh.com",
             "server_port": 443,
             "tls": {
                 "alpn": [
@@ -169,8 +169,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "vipmcihyster3.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "vipmcihyster33.dooricheh.com",
             "server_port": 443,
             "tls": {
                 "alpn": [
@@ -192,8 +192,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "vipmcihyster4.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "vipmcihyster44.dooricheh.com",
             "server_port": 443,
             "tls": {
                 "alpn": [
@@ -215,8 +215,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "vipmcihyster5.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "vipmcihyster55.dooricheh.com",
             "server_port": 443,
             "tls": {
                 "alpn": [
@@ -238,8 +238,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "belghyster1.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "belghyster11.dooricheh.com",
             "server_port": 443,
             "tls": {
                 "alpn": [
@@ -261,8 +261,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "belghyster2.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "belghyster22.dooricheh.com",
             "server_port": 443,
             "tls": {
                 "alpn": [
@@ -271,7 +271,7 @@
                 "certificate": "-----BEGIN CERTIFICATE-----\nMIIEpjCCA46gAwIBAgIUTTka8yPCFyGEcbz/k30WnqmsPgQwDQYJKoZIhvcNAQEL\nBQAwgYsxCzAJBgNVBAYTAlVTMRkwFwYDVQQKExBDbG91ZEZsYXJlLCBJbmMuMTQw\nMgYDVQQLEytDbG91ZEZsYXJlIE9yaWdpbiBTU0wgQ2VydGlmaWNhdGUgQXV0aG9y\naXR5MRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRMwEQYDVQQIEwpDYWxpZm9ybmlh\nMB4XDTIzMTIyNjE2MDAwMFoXDTM4MTIyMjE2MDAwMFowYjEZMBcGA1UEChMQQ2xv\ndWRGbGFyZSwgSW5jLjEdMBsGA1UECxMUQ2xvdWRGbGFyZSBPcmlnaW4gQ0ExJjAk\nBgNVBAMTHUNsb3VkRmxhcmUgT3JpZ2luIENlcnRpZmljYXRlMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyrKSVA9GIaAivI/Peu240S9O1Pk2beNWajR6\nKoFlvuDc1EeoceDsPgUS2qtoyYs5SyOdHuYdfh55/MyWlbhmCWIa/WeU4SsVASm6\nZy6Ag864PNknqGJz6pJ0fb9rlIVk7gDOQ2MVsARN1bFQACxy3ap/Lly47s46xnKf\noLmwdiH1hcCTzQoDcrCeXu2wmnIUsJ1IqKMztYNa7/h9+5j3O9TVLAIBzmEMhWBr\nihJ33L9Jwnb+HRmH0bhwbUw38sVo/z5yp7eErcyWH0fCU9dve08E/xqj+kxI/t4C\nF6JXfEDRvAXx02iCHeZFpkQSUa9w1wFnuSV6WN2djeH8MoqwfwIDAQABo4IBKDCC\nASQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRHcmm52ef0L3Y8rYLdDHQgV0177zAf\nBgNVHSMEGDAWgBQk6FNXXXw0QIep65TbuuEWePwppDBABggrBgEFBQcBAQQ0MDIw\nMAYIKwYBBQUHMAGGJGh0dHA6Ly9vY3NwLmNsb3VkZmxhcmUuY29tL29yaWdpbl9j\nYTApBgNVHREEIjAggg8qLmRvb3JpY2hlaC5jb22CDWRvb3JpY2hlaC5jb20wOAYD\nVR0fBDEwLzAtoCugKYYnaHR0cDovL2NybC5jbG91ZGZsYXJlLmNvbS9vcmlnaW5f\nY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAP/0xAW61x+O6q2Fu5Aa6s94AdRu6K\nvWwwvH2pVzvSVUL/o8nkqWtdDy6ydF2Tjbh6m/e2nLYQana+b7otbv/hGQWfjt2y\n9sRc3rLwHTiH2Nrvo8I6t9NpAAVrzfFp2nKvT4OuE7TI2peJRrEjp3HHj+ppy5Gs\n7x1RGreM6uC/08JXZNFTpoM7b570cpwWqBZWYT/u34D67N2FTQTgvG7fOUXJlyNb\n75bSsa3TxwSRuSnCL7kG3/ukqQPs1DJtsF5JfjhqrjdL34TYslsWogSnTsuT01NH\nL1yGEOrnNukEznFp+ciSQbde2QqoYdMtA+saE4UXfHjaEwhqdF6diTeW\n-----END CERTIFICATE-----",
                 "enabled": true,
                 "insecure": false,
-                "server_name": "belghysterh3.dooricheh.com"
+                "server_name": "belghysterh33.dooricheh.com"
             },
             "up_mbps": 40,
             "type": "hysteria2",
@@ -284,8 +284,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "vipmcihystertunir.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "vipmcihystertunir1.dooricheh.com",
             "server_port": 21859,
             "tls": {
                 "alpn": [
@@ -307,8 +307,8 @@
                 "password": "hyspass",
                 "type": "salamander"
             },
-            "password": "mahbobe:mahbobe64839",
-            "server": "belgtunir.dooricheh.com",
+            "password": "mahbobe:mahbobe648399",
+            "server": "belgtunir1.dooricheh.com",
             "server_port": 53425,
             "tls": {
                 "alpn": [
